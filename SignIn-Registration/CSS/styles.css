@@ -24,8 +24,12 @@
     color: black;
     padding: 10px;
 }
-#label {
+.signInlabel {
     text-align: center;
+}
+.registrationLabel{
+    text-align: left;
+    margin-left:21 px;
 }
 #age{
     width: 30px;
