@@ -11,7 +11,8 @@ body {
     width: 400px;
        
 }
-ul {
+
+.ul {
     margin-left: 40px;
     list-style-type:none;
 }
