@@ -36,6 +36,6 @@ button {
 button:hover {
     background-color: lavender;
 }
-botton:active {
+button:active {
     background-color: lightcoral;
 }

@@ -8,3 +8,9 @@ function delFromRight() {
 function clearDisplay() {
     document.getElementById('display2').value = "";
 }
+function setOp(tag) {
+    val1 = document.getElementById('display2').value + " " + tag.value;
+    document.getElementById('display1').innerHTML = val1;
+    document.getElementById('display2').value = "";
+
+}
