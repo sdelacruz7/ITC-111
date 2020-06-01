@@ -5,3 +5,8 @@
     width: max-content;
     overflow: hidden;
 }
+.row {
+    margin: 0 2px;
+    height: max-content;
+    overflow: hidden;
+}
