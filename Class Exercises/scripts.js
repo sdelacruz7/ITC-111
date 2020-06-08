@@ -9,8 +9,45 @@ function clearDisplay() {
     document.getElementById('display2').value = "";
 }
 function setOp(tag) {
-    val1 = document.getElementById('display2').value + " " + trg.value;
+    val1 = document.getElementById('display2').value + " " + tag.value;
     document.getElementById('display1').innerHTML = val1;
     document.getElementById('display2').value = "";
 
 }
+function doMath() {
+    alert('reached')
+    val2 + document.getElementById('display2').value;
+    var result;
+    switch(val1.slice(-1)){
+        case '+':
+            result = parseInt(val1) + parseInt(val2);
+            break;
+        case '-':
+            result = parseInt(val1) - parseInt(val2);
+            break;
+        case '/':
+            result = parseInt(val1) / parseInt(val2);
+            break;
+        case '*':
+            result = parseInt(val1) * parseInt(val2);
+            break;
+        case 's':
+            result = Math.sqrt(parseInt(val1));
+        case ''
+        
+        }
+
+    document.getElementById('display1').innerHTML = "";
+    document.getElementById('display2').value = result;
+    val1 = null;
+    val2 = null;
+    result = null;
+
+}
+//function specialCase(){
+//    if(sqrt){
+//        // do square root math
+//    }else{
+//       // do exponent math
+//    }
+// }
