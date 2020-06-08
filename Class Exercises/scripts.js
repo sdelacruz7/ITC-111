@@ -33,8 +33,10 @@ function doMath() {
             break;
         case 's':
             result = Math.sqrt(parseInt(val1));
-        case ''
-        
+            break;
+        case 'p':
+            result = Math.pow(parseInt(val1), parseInt(val2));
+            break;
         }
 
     document.getElementById('display1').innerHTML = "";
