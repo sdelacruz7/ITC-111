@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <title>ITC-111 Web Portal</title>
+    <style>
+        ul {
+            background-color: #d8d8d8;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li,
+        a {
+            display: block;
+            color: rgb(188, 150, 250);
+            padding: 9px;
+        }
+
+        li a:hover {
+            background-color: #808080;
+        }
+
+        li {
+            float: left;
+        }
+
+        #outerDiv {
+            margin: 0 auto;
+            width: 75%;
+            overflow: hidden;
+        }
+
+        #innerDivBodyLeft,
+        #innerDivBodyRight {
+            float: left;
+            height: 500px;
+        }
+
+        #innerDivBodyLeft {
+            background-color: rgb(230, 208, 255);
+            width: 20%;
+        }
+
+        #innerDivBodyRight {
+            background-color: blue;
+            width: 80%;
+        }
+    </style>
+    <script>
+        function changeText(txt) {
+            //alert(txt);
+            document.getElementById('innerDivBodyLeft').innerHTML = '<a href="#" onclick="newFunction()"> New Link</a>';
+            document.getElementById('innerDivBodyRight').innerHTML = "Some New Text";
+        }
+    </script>
+</head>
+
+<body>
+    <div id='outerDiv'>
+        <div>
+            <ul>
+                <li>
+                    <a href="https://sdelacruz7.github.io/ITC-111/classEx/classEx6b.html" onclick='changeText("Home")'>Class Exercises</a>
+                </li>
+                <li>
+                    <a href="https://sdelacruz7.github.io/ITC-111/classEx/classEx06c.html">Assignments</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div id='innerDivBodyLeft'>
+            <li><a href="https://sdelacruz7.github.io/ITC-111/classEx/classEx01.html"> classEx01</a>
+            <li><a href="https://sdelacruz7.github.io/ITC-111/classEx/classEx02.html"> classEx02</a>
+            <li><a href="https://sdelacruz7.github.io/ITC-111/classEx/classEx02a.html"> classEx02a</a>
+            <li><a href="https://sdelacruz7.github.io/ITC-111/classEx/classEx02b.html"> classEx02b</a>
+            <li><a href="https://sdelacruz7.github.io/ITC-111/classEx/classEx03.html"> classEx03</a>
+            <li><a href="https://sdelacruz7.github.io/ITC-111/classEx/classEx04a.html"> classEx04a</a>
+            <li><a href="https://sdelacruz7.github.io/ITC-111/classEx/classEx05a.html"> classEx05a</a>
+            <li><a href="https://sdelacruz7.github.io/ITC-111/classEx/classEx06a.html"> classEx06a</a>
+            <li><a href="https://sdelacruz7.github.io/ITC-111/classEx/classEx6b.html"> classEx06b</a>
+            <li><a href="https://sdelacruz7.github.io/ITC-111/classEx/classEx06c.html"> classEx06c</a></li>
+
+        </div>
+
+
+        <div id='innerDivBodyRight'>
+            <p id='textDivRight'>Content goes here when link is clicked</p>
+        </div>
+    </div>
+</body>
+
+</html>
